@@ -1,0 +1,49 @@
+$border: 1px solid rgb(56, 68, 77);
+
+.chatContainer {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 500px;
+  border: $border;
+}
+
+.chatDisplay {
+  height: 100%;
+  padding: 0.5rem;
+  border-bottom: none;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+
+  > div {
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+    border-radius: 5px;
+    color: white;
+    word-break: break-word;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  }
+
+  .sentMessage {
+    align-self: flex-end;
+    margin-left: 8rem;
+    background-color: #0084ff;
+  }
+
+  .receivedMessage {
+    align-self: flex-start;
+    margin-right: 8rem;
+    background-color: blueviolet;
+  }
+}
+
+.chatBox {
+  display: flex;
+  padding: 0.5rem;
+
+  .chatInput {
+    margin-right: 0.5rem;
+  }
+}
